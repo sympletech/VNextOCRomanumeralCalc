@@ -32,21 +32,52 @@ namespace RomanNumeralzTranslator
             {
                 if (roman.Contains(pair.Key))
                 {
-                    result += pair.Value;
-                    roman = roman.Replace(pair.Key, "");
+                    //result += pair.Value;
+                    roman = roman.Replace(pair.Key, ";" + pair.Value);
                 }
             }
 
             foreach (var c in roman)
             {
-                if (!lookupValues.ContainsKey(c))
+                if (lookupValues.ContainsKey(c))
                 {
-                    throw new ArgumentException(c + " not a valid Roman numeral");
+                    roman = roman.Replace(c.ToString(), ";" + lookupValues[c]);
                 }
-                result += lookupValues[c];
             }
 
+            string[] tokens = roman.Split(';');
+            ThrowOnInvalidToken(tokens[0]);
+            int lastToken = int.MaxValue;
+
+            for (int i = 1; i < tokens.Length; i++)
+            {
+                var token = tokens[i];
+
+                int j = 0;
+                if (int.TryParse(token, out j))
+                {
+                    if (j > lastToken)
+                    {
+                        throw new ArgumentException("Invalid");
+                    }
+                    lastToken = j;
+
+                    result += j;
+                }
+                else
+                {
+                    ThrowOnInvalidToken(token);
+                }
+            }
             return result;
+        }
+  
+        private static void ThrowOnInvalidToken(string token)
+        {
+            if (!string.IsNullOrWhiteSpace(token))
+            {
+                throw new ArgumentException(string.Format("{0} not a valid Roman numeral", token));
+            }
         }
     }
 }

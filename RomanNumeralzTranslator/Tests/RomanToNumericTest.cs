@@ -36,10 +36,18 @@ namespace RomanNumeralzTranslator
         }
 
         [TestMethod]
-        public void RomanToDecimalExceptionIIXTest()
+        public void BadDigitsTest()
         {
-            var ex = ExceptionUtilities.GetException(() => RomanNumeralTranslator.Translate("IIX"));
-            Approvals.Verify(ex);
+            string[] badDigits = {"IIX","IIZ","MIM", "MOM", "IVI", "HIV","XXVX", "VV"};
+            var ex =
+                badDigits.Select(
+                    x =>
+                        new
+                        {
+                            Key = x,
+                            Value = ExceptionUtilities.GetException(() => RomanNumeralTranslator.Translate(x))
+                        });
+            Approvals.VerifyAll(ex,"");
         }
     }
 }

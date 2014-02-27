@@ -1,1 +1,4 @@
-﻿ aaa
+﻿System.ArgumentException: Invalid
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in ...\RomanNumeralTranslator.cs
+   at RomanNumeralzTranslator.RomanToNumericTest.<RomanToDecimalExceptionIIXTest>() in ...\RomanToNumericTest.cs
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in ...\ExceptionUtilities.cs

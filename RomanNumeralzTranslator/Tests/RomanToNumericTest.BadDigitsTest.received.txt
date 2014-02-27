@@ -1,0 +1,30 @@
+﻿[0] = { Key = IIX, Value = System.ArgumentException: Invalid
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 61
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[1] = { Key = IIZ, Value = System.ArgumentException: 1Z not a valid Roman numeral
+   at RomanNumeralzTranslator.RomanNumeralTranslator.ThrowOnInvalidToken(String token) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 79
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 69
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[2] = { Key = MIM, Value = System.ArgumentException: M not a valid Roman numeral
+   at RomanNumeralzTranslator.RomanNumeralTranslator.ThrowOnInvalidToken(String token) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 79
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 49
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[3] = { Key = MOM, Value = System.ArgumentException: MOM not a valid Roman numeral
+   at RomanNumeralzTranslator.RomanNumeralTranslator.ThrowOnInvalidToken(String token) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 79
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 49
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[4] = { Key = IVI, Value =  }
+[5] = { Key = HIV, Value = System.ArgumentException: H not a valid Roman numeral
+   at RomanNumeralzTranslator.RomanNumeralTranslator.ThrowOnInvalidToken(String token) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 79
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 49
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[6] = { Key = XXVX, Value = System.ArgumentException: Invalid
+   at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Code\RomanNumeralTranslator.cs:line 61
+   at RomanNumeralzTranslator.RomanToNumericTest.<>c__DisplayClass7.<BadDigitsTest>b__5() in c:\Users\Daniel\Documents\Visual Studio 2013\Projects\RomanNumeralzTranslator\RomanNumeralzTranslator\Tests\RomanToNumericTest.cs:line 48
+   at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in c:\code\ApprovalTests.Net\ApprovalUtilities\Utilities\ExceptionUtilities.cs:line 45 }
+[7] = { Key = VV, Value =  }

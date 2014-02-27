@@ -1,4 +1,5 @@
 ﻿System.ArgumentException: Z not a valid Roman numeral
+   at RomanNumeralzTranslator.RomanNumeralTranslator.ThrowOnInvalidToken(String token) in ...\RomanNumeralTranslator.cs
    at RomanNumeralzTranslator.RomanNumeralTranslator.Translate(String roman) in ...\RomanNumeralTranslator.cs
    at RomanNumeralzTranslator.RomanToNumericTest.<RomanToDecimalExceptionTest>() in ...\RomanToNumericTest.cs
    at ApprovalUtilities.Utilities.ExceptionUtilities.GetException(Action action) in ...\ExceptionUtilities.cs
