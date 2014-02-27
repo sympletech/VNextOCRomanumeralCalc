@@ -56,13 +56,18 @@ namespace RomanNumeralzTranslator
                 int j = 0;
                 if (int.TryParse(token, out j))
                 {
-                    if (j > lastToken)
+                    if (j > lastToken )
+                    {
+                        throw new ArgumentException("Invalid");
+                    }
+                    bool b = IsPowerofTen(j);
+                    if (b && j == lastToken)
                     {
                         throw new ArgumentException("Invalid");
                     }
                     lastToken = j;
-
                     result += j;
+
                 }
                 else
                 {
@@ -70,6 +75,13 @@ namespace RomanNumeralzTranslator
                 }
             }
             return result;
+        }
+  
+        private static bool IsPowerofTen(int j)
+        {
+            double baseCheck = Math.Log10(j);
+            bool b = baseCheck != Math.Floor(baseCheck);
+            return b;
         }
   
         private static void ThrowOnInvalidToken(string token)

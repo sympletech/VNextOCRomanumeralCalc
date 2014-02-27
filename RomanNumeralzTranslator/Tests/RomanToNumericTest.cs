@@ -38,7 +38,7 @@ namespace RomanNumeralzTranslator
         [TestMethod]
         public void BadDigitsTest()
         {
-            string[] badDigits = {"IIX","IIZ","MIM", "MOM", "IVI", "HIV","XXVX", "VV"};
+            string[] badDigits = {"IIX","IIZ","MIM", "MOM", "IVI", "HIV","XXVX", "VV","LL","LLCOOLJ"};
             var ex =
                 badDigits.Select(
                     x =>
